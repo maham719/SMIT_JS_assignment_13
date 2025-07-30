@@ -116,7 +116,7 @@ if (userinput.includes("hey there") ||userinput.includes("hi") ||userinput.inclu
 }else if(userinput.includes("qoutes")){
       let index=Math.floor(Math.random()*quotes.length-1);
      reply=quotes[index];
-}else if(userinput.includes("what can you do? ")||userinput.includes("tell me about yourself")){
+}else if(userinput.includes("what can you do?")||userinput.includes("tell me about yourself")){
  reply=" i am a chat bot and i can greet you ,tell you a joke, pick a random qoute for you and answer few questions which you can see in suggestions on your screen - Thank you! "
 }else if(userinput.includes("good morning")){
   reply="Good morning 😊";
