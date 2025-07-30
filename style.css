@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 .header{
-    width:66% ;
+    width:68% ;
     height: 30px;
     font-size: 1.7rem;
     color: white;
@@ -85,14 +85,14 @@ background-color:white;
     font-size: 1.2rem;
 }
 .chat-container{
-   height: calc(100vh - 120px );
+   height: calc(100vh - 160px );
     width: 68%;
     overflow-y: auto;
 margin: auto;
 display: flex;
 flex-direction: column;
 gap: 1rem;
-padding: 20px;
+padding: 10px;
 }
 
 .chat-container::-webkit-scrollbar {
@@ -116,17 +116,18 @@ padding: 20px;
     padding: 0.5rem;
     border-radius: 3rem 3rem 0 3rem ;
     color: white;
+    font-size: 15px;
 }
 .chatbot-box{
     max-width: 50%;
     align-self: flex-start;
     background-color: #DDD;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 3rem 3rem 3rem 0rem ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    line-height: 1.5rem;
+    font-size: 15px;
 }
 .chatbot-box p{
 padding-left: 0.5rem;
@@ -166,4 +167,38 @@ transition: all 0.5s;
 }
 .suggestions button:focus i{
     visibility: visible;
+}
+@media screen and (max-width:400px) {
+    .chat-container{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+    .header{
+        width: 100%;
+    }
+    #btn{
+        width: 10%;
+        height: 45%;
+    }
+    #prompt{
+          width: 50%;
+    height: 8%;
+    padding: 15px;
+    }
+ .delete{
+    padding: 0.5rem 0.5rem;
+ }
+ .prompt-area{
+    padding: 0 20px;
+ }
+.user-chatbox{
+    padding: 0.5rem 0.4rem;
+    font-size: 14px;
+}
+.chatbot-box{
+       padding: 0.2rem 0.4rem;
+    font-size: 14px;
+    max-width: 70%;
+}
 }

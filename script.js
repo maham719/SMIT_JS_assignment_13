@@ -143,3 +143,15 @@ deletechat.addEventListener("click",()=>{
     chatContainer.innerHTML="";}
     deletechat.style.display="none"
 })
+
+ function updateButtonText() {
+    if (window.innerWidth <= 640) {
+      deletechat.innerHTML = "<i class='ri-delete-bin-6-line'></i>";
+    } else {
+      deletechat.textContent = "Delete  Chat";
+    }
+  }
+
+  // Run on load and on resize
+  window.addEventListener("resize", updateButtonText);
+  window.addEventListener("load", updateButtonText);
