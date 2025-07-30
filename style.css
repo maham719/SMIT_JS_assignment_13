@@ -85,8 +85,12 @@ background-color:white;
     font-size: 1.2rem;
 }
 .chat-container{
+
    height: calc(100vh - 160px );
     width: 68%;
+
+   height: calc(100vh - 120px );
+    width: 66%;
     overflow-y: auto;
 margin: auto;
 display: flex;
