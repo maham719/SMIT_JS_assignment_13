@@ -4,6 +4,8 @@ let chatContainer = document.querySelector(".chat-container");
 let suggestions=document.querySelectorAll(".btn")
 const promptInput = document.getElementById('prompt');
 const suggest = document.getElementById('suggestions');
+let deletechat=document.querySelector("#delete");
+
 
 promptInput.addEventListener('focus', () => {
   suggest.style.transform = 'translateY(0%)';
@@ -91,6 +93,11 @@ function getReply(chatbox) {
 btn.addEventListener("click",()=>{
     let input=promptInput.value
 let userinput = input.toLowerCase();
+if(userinput){
+    setTimeout(()=>{
+        deletechat.style.display="block";
+    },1000)
+}
 if (userinput.includes("hey there") ||userinput.includes("hi") ||userinput.includes("hi")) {
     reply = "hey, how can I help you today?";
 } else if (userinput.includes("your name?")) {
@@ -130,3 +137,8 @@ chatContainer.appendChild(usermessage);
     }, 300);
 })
 
+deletechat.addEventListener("click",()=>{
+    let con=window.confirm("you sure you want to delete this chat?");
+    if(con){
+    chatContainer.innerHTML="";}
+})
