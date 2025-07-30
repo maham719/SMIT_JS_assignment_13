@@ -118,9 +118,9 @@ if (userinput.includes("hey there") ||userinput.includes("hi") ||userinput.inclu
      reply=quotes[index];
 }else if(userinput.includes("what can you do? ")||userinput.includes("tell me about yourself")){
  reply=" i am a chat bot and i can greet you ,tell you a joke, pick a random qoute for you and answer few questions which you can see in suggestions on your screen - Thank you! "
-}else if(userinput.includes("Good morning")){
+}else if(userinput.includes("good morning")){
   reply="Good morning 😊";
-}else if(userinput.includes("Good evening")){
+}else if(userinput.includes("good evening")){
     reply="Good Evening 🌃"
 }else{
     reply="choose something from suggestions i am a custom chatbot my ability to reply is limited -Thankyou ! have a nice day 😊";
