@@ -141,4 +141,5 @@ deletechat.addEventListener("click",()=>{
     let con=window.confirm("you sure you want to delete this chat?");
     if(con){
     chatContainer.innerHTML="";}
+    deletechat.style.display="none"
 })
