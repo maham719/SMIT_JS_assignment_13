@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Moon+Dance&family=Orbitron:wght@400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rancho&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prompt-area{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color:white;
+}
+#prompt{
+    width: 60%;
+    height: 10%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.753);
+}
+#prompt:focus{
+        box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.462);
+
+}
+#btn{
+    width: 5%;
+    height: 60%;
+    background-color:#13b8ff;
+    border: none;
+     border-radius: 0px 30px 30px 0px;
+   cursor: pointer;
+   transition: 0.5s all;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.753);
+
+
+}
+#btn:hover{
+    background-color: #1097d0;
+}
+#btn i{
+    color: white;
+    font-size: 1.2rem;
+}
+.chat-container{
+   height: calc(100vh - 120px );
+    width: 65%;
+    overflow-y: auto;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 20px;
+}
+
+.chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-container::-webkit-scrollbar-thumb {
+   background-color: #13b8ff; 
+    border-radius: 20px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background-color: #1097d0; 
+}
+.chat-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.user-chatbox{
+    max-width: 50%;
+    align-self: flex-end;
+    background-color: #13b8ff;
+    padding: 0.5rem;
+    border-radius: 3rem 3rem 0 3rem ;
+}
+.chatbot-box{
+    max-width: 50%;
+    align-self: flex-start;
+    background-color: #DDD;
+    padding: 1rem;
+    border-radius: 3rem 3rem 3rem 0rem ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+}
+.chatbot-box p{
+padding-left: 0.5rem;
+}
+.suggestions{
+    height: 50px;
+display: flex;
+gap: 0.5rem;
+align-items: center;
+position: fixed;
+bottom: 12%;
+    transform: translateY(300%);
+transition: all 0.5s;
+}
+.suggestions button{
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.242);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.suggestions button:hover{
+    transform: translateY(-3px);
+}
+.suggestions button i{
+    position: absolute;
+    top: 0;
+    color: #1097d0;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+.suggestions button:focus{
+    background-color: #13b8ff2c;
+}
+.suggestions button:focus i{
+    visibility: visible;
+}
