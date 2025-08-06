@@ -108,7 +108,7 @@ if (userinput.includes("hey there") ||userinput.includes("hi") ||userinput.inclu
 }else if(userinput.includes("who created you")){
     reply="syeda maham amjad";
 }else if (userinput.includes("how are you")){
-      let index=Math.floor(Math.random()*how.length-1);
+      let index=Math.floor(Math.random()*how.length);
       reply=how[index];
 }else if(userinput.includes("fun fact")){
       let index=Math.floor(Math.random()*funfact.length-1);
